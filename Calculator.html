@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="" content="" width = "device-width">
+		<title>Calculator by Onileola</title>
+		<style type="text/css" media="all">
+			input {
+				height: 70px;
+				width: 212px;
+				background-color: #1f2d30;
+				color: #00ff2c;
+				
+			}
+			td {
+				border: solid 4px #001bff;
+				text-align: center;
+        padding: 15px;
+				margin: 2px;
+				color: #06ff00;
+				background-color: #1613a0;
+				border-radius: 5px;
+			}
+			
+			button {
+				width: 212px;
+				padding: 15px;
+				margin: 2px;
+				border-radius: 5px;
+				border: solid 4px #001bff;
+				background-color: #ca1a86;
+				font-size: bold;
+			}
+			button:hover {
+				background-color: #ac00ff;
+			}
+			table {
+				border: solid #2db7d9 2px ;
+				border-radius: 3px 4px 5px 2px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<center>
+			
+		<div>
+			<input placeholder="CALCULATOR BY ONILEOLA"  id="result" disabled />
+		</div>
+		<table >
+			
+			<tr id="rollone">
+				<td onclick="result.value+=7">7</td>
+				<td onclick="result.value+=8">8</td>
+				<td onclick="result.value+=9">9</td>
+				<td onclick="result.value+='+'">+</td>
+			</tr>
+			
+			<tr id="rolltwo">
+				<td onclick="result.value+=4">4</td>
+				<td onclick="result.value+=5">5</td>
+				<td onclick="result.value+=6">6</td>
+				<td onclick="result.value+='-'">-</td>
+			</tr>
+			<tr id="roll3">
+				<td onclick="result.value+=1">1</td>
+				<td onclick="result.value+=2">2</td>
+				<td onclick="result.value+=3">3</td>
+				<td onclick="result.value+='/'">÷</td>
+			</tr>
+			<tr>
+				<td onclick="result.value+=0">0</td>
+				<td onclick="result.value+='*'">*</td>
+				<td onclick="result.value+='.'">.</td>
+				<td onclick="result.value=''">AC</td>
+			</tr>
+		</table>
+		<div>
+			<button onclick="result.value=eval(result.value)">=</button>
+		</div>
+		</center>
+		
+	</body>
+</html>
